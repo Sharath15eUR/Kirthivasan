@@ -1,0 +1,14 @@
+kirthivasan@kirthivasan:~$ mkdir s1
+kirthivasan@kirthivasan:~$ cd s1
+kirthivasan@kirthivasan:~/s1$ touch sample.txt
+kirthivasan@kirthivasan:~/s1$ cd
+kirthivasan@kirthivasan:~$ mkdir s2
+kirthivasan@kirthivasan:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  s1  s2  snap  Templates  Videos
+kirthivasan@kirthivasan:~$ cd s2
+kirthivasan@kirthivasan:~/s2$ ln -s sample sample-link
+kirthivasan@kirthivasan:~/s2$ ls
+sample-link
+kirthivasan@kirthivasan:~/s2$ ls -l
+total 0
+lrwxrwxrwx 1 kirthivasan kirthivasan 6 Jan 25 21:46 sample-link -> sample
