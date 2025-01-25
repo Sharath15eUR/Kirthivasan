@@ -1,0 +1,11 @@
+kirthivasan@kirthivasan:~$ mkdir Q5
+kirthivasan@kirthivasan:~$ cd Q5
+kirthivasan@kirthivasan:~/Q5$ touch f1 f2 f3
+kirthivasan@kirthivasan:~/Q5$ touch s1
+irthivasan@kirthivasan:~/Q5$ ls -lt > s1
+kirthivasan@kirthivasan:~/Q5$ cat s1
+total 0
+-rw-rw-r-- 1 kirthivasan kirthivasan 0 Jan 25 22:18 s1
+-rw-rw-r-- 1 kirthivasan kirthivasan 0 Jan 25 22:17 f1
+-rw-rw-r-- 1 kirthivasan kirthivasan 0 Jan 25 22:17 f2
+-rw-rw-r-- 1 kirthivasan kirthivasan 0 Jan 25 22:17 f3
