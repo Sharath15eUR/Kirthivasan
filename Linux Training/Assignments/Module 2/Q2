@@ -1,0 +1,24 @@
+kirthivasan@kirthivasan:~$ vi config.txt
+kirthivasan@kirthivasan:~$ cat config.txt
+server = localhost
+database_host = localhost
+port = 3306
+api_url = http://localhost:8080
+log_path = /var/log/localhost
+timeout = 30
+kirthivasan@kirthivasan:~$ sed -i 's/localhost/127.0.0.1/g' config.txt 
+kirthivasan@kirthivasan:~$ cat config.txt
+server = 127.0.0.1
+database_host = 127.0.0.1
+port = 3306
+api_url = http://127.0.0.1:8080
+log_path = /var/log/127.0.0.1
+timeout = 30
+kirthivasan@kirthivasan:~$ mv config.txt updated_config.txt
+kirthivasan@kirthivasan:~$ cat updated_config.txt
+server = 127.0.0.1
+database_host = 127.0.0.1
+port = 3306
+api_url = http://127.0.0.1:8080
+log_path = /var/log/127.0.0.1
+timeout = 30
