@@ -1,0 +1,16 @@
+kirthivasan@kirthivasan:~$ nano backup_manager.sh
+kirthivasan@kirthivasan:~$ ./backup_manager.sh "/home/kirthivasan/source" "/home/kirthivasan/backup" ".txt"
+Backing up: file1.txt (13 bytes)
+Copied: file1.txt
+Backing up: file2.txt (12 bytes)
+Copied: file2.txt
+Backing up: file3.txt (9 bytes)
+Copied: file3.txt
+kirthivasan@kirthivasan:~$ cd backup
+kirthivasan@kirthivasan:~/backup$ ls
+backup_report.log  file1.txt  file2.txt  file3.txt
+kirthivasan@kirthivasan:~/backup$ cat backup_report.log
+Backup Summary
+Total files processed: 3
+Total size: 34 bytes
+Backup location: /home/kirthivasan/backup
