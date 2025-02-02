@@ -1,0 +1,4 @@
+kirthivasan@kirthivasan:~$ process_id=$(ps aux --sort=-%mem | awk 'NR==2 {print $2}')
+kirthivasan@kirthivasan:~$ echo "$process_id"
+7963
+kirthivasan@kirthivasan:~$ kill -9 "$process_id"
