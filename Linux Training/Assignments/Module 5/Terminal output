@@ -1,0 +1,60 @@
+kirthivasan@kirthivasan:~$ ./file_analyzer.sh  -d /home/kirthivasan -k "linux"
+File Name: ./file_analyzer.sh
+No.of Args: 4
+Args: -d /home/kirthivasan -k linux
+PID: 20634
+Keyword found in /home/kirthivasan/file
+Keyword found in /home/kirthivasan/file2
+Keyword found in /home/kirthivasan/source/file1.txt
+---------------------------------------------------------------------------------------------------------------------------------
+kirthivasan@kirthivasan:~$ ./file_analyzer.sh  -f /home/kirthivasan/file -k "linux"
+File Name: ./file_analyzer.sh
+No.of Args: 4
+Args: -f /home/kirthivasan/file -k linux
+PID: 20668
+Keyword linux found in /home/kirthivasan/file
+---------------------------------------------------------------------------------------------------------------------------------
+kirthivasan@kirthivasan:~$ ./file_analyzer.sh  --help
+File Name: ./file_analyzer.sh
+No.of Args: 1
+Args: --help
+PID: 20672
+
+Options:
+    -d <directory>: Directory to search
+    -k <keyword>: Keyword to search
+    -f <file>: File to search directly
+    --help: Display the help menu
+
+Example:
+    # Recursively search a directory for a keyword
+    ./file_analyzer.sh -d <directory_name> -k <keyword_to_search>
+
+    # Search for a keyword in a file
+    ./file_analyzer.sh -f <file_name> -k <keyword_to_search>
+
+    # Display the help menu
+    ./file_analyzer.sh --help
+----------------------------------------------------------------------------------------------------------------------------------
+kirthivasan@kirthivasan:~$ ./file_analyzer.sh  -f /home/kirthivasan/file -l "linux"
+File Name: ./file_analyzer.sh
+No.of Args: 4
+Args: -f /home/kirthivasan/file -l linux
+PID: 20957
+Provide the proper arguments pleae refer the below
+
+Options:
+    -d <directory>: Directory to search
+    -k <keyword>: Keyword to search
+    -f <file>: File to search directly
+    --help: Display the help menu
+
+Example:
+    # Recursively search a directory for a keyword
+    ./file_analyzer.sh -d <directory_name> -k <keyword_to_search>
+
+    # Search for a keyword in a file
+    ./file_analyzer.sh -f <file_name> -k <keyword_to_search>
+
+    # Display the help menu
+    ./file_analyzer.sh --help
