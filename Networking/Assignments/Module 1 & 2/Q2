@@ -1,0 +1,91 @@
+Hosting Ftp server and using the GET and PUT command
+
+t1@kirthivasan:~$ sudo apt update && sudo apt install vsftpd -y
+[sudo] password for t1: 
+Hit:1 http://in.archive.ubuntu.com/ubuntu noble InRelease                      
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Hit:3 http://in.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+281 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+vsftpd is already the newest version (3.0.5-0ubuntu3.1).
+0 upgraded, 0 newly installed, 0 to remove and 281 not upgraded.
+t1@kirthivasan:~$ sudo nano /etc/vsftpd.conf
+t1@kirthivasan:~$ sudo systemctl restart vsftpd
+t1@kirthivasan:~$ sudo systemctl enable vsftpd
+Synchronizing state of vsftpd.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable vsftpd
+
+t1@kirthivasan:~$ ftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.5)
+Name (localhost:kirthivasan): t1
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put putfile.txt
+local: putfile.txt remote: putfile.txt
+229 Entering Extended Passive Mode (|||34791|)
+150 Ok to send data.
+  0% |                                   |     0        0.00 KiB/s    --:-- ETA
+226 Transfer complete.
+
+ftp> get getfile.txt
+local: getfile.txt remote: getfile.txt
+229 Entering Extended Passive Mode (|||51422|)
+150 Opening BINARY mode data connection for getfile.txt (21 bytes).
+100% |***********************************|    21      184.75 KiB/s    00:00 ETA
+226 Transfer complete.
+21 bytes received in 00:00 (15.55 KiB/s)
+ftp> bye
+221 Goodbye.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hosting Sftp server 
+
+t1@kirthivasan:~$ sudo apt update && sudo apt install openssh-server -y
+Hit:1 http://in.archive.ubuntu.com/ubuntu noble InRelease                      
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Hit:3 http://in.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+281 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+openssh-server is already the newest version (1:9.6p1-3ubuntu13.8).
+0 upgraded, 0 newly installed, 0 to remove and 281 not upgraded.
+t1@kirthivasan:~$ sudo systemctl restart ssh
+t1@kirthivasan:~$ sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
+Created symlink /etc/systemd/system/sshd.service → /usr/lib/systemd/system/ssh.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /usr/lib/systemd/system/ssh.service.
+t1@kirthivasan:~$ sftp t1@localhost
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:Gw0NLzkeHHo2HA52npDdJzxUBFXNDDiolmeSLvf0VfE.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:1: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+t1@localhost's password: 
+Connected to localhost.
+sftp> put putfile.txt
+Uploading putfile.txt to /home/t1/putfile.txt
+putfile.txt                                   100%    0     0.0KB/s   00:00    
+sftp> get getfile.txt
+Fetching /home/t1/getfile.txt to getfile.txt
+getfile.txt                                     0%    0     0.0KB/s   --:-- ETA
+sftp> bye
+
+
