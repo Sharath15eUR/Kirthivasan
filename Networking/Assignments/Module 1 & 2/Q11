@@ -1,0 +1,20 @@
+kirthivasan@kirthivasan:~$ ssh t1@10.0.2.15
+t1@10.0.2.15's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-52-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+277 updates can be applied immediately.
+57 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+8 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Last login: Wed Mar 12 22:37:24 2025 from 10.0.2.15
+t1@kirthivasan:~$ 
+--------------------------------------------------------------------------------------------------------------
