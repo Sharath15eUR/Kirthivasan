@@ -1,0 +1,16 @@
+kirthivasan@kirthivasan:~$ ip route | grep default
+default via 10.0.2.2 dev enp0s3 proto dhcp src 10.0.2.15 metric 100 
+kirthivasan@kirthivasan:~$ ping 10.0.2.2 
+PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
+64 bytes from 10.0.2.2: icmp_seq=1 ttl=255 time=1.17 ms
+64 bytes from 10.0.2.2: icmp_seq=2 ttl=255 time=0.446 ms
+64 bytes from 10.0.2.2: icmp_seq=3 ttl=255 time=0.329 ms
+64 bytes from 10.0.2.2: icmp_seq=4 ttl=255 time=0.445 ms
+64 bytes from 10.0.2.2: icmp_seq=5 ttl=255 time=0.478 ms
+64 bytes from 10.0.2.2: icmp_seq=6 ttl=255 time=0.486 ms
+64 bytes from 10.0.2.2: icmp_seq=7 ttl=255 time=0.393 ms
+64 bytes from 10.0.2.2: icmp_seq=8 ttl=255 time=0.601 ms
+^C
+--- 10.0.2.2 ping statistics ---
+8 packets transmitted, 8 received, 0% packet loss, time 7150ms
+rtt min/avg/max/mdev = 0.329/0.543/1.173/0.248 ms
