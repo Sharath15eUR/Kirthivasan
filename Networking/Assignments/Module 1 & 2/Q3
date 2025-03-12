@@ -1,0 +1,19 @@
+TCP dump
+
+kirthivasan@kirthivasan:~$ sudo tcpdump -i enp0s3 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+23:54:33.642836 IP6 kirthivasan.46050 > gladys.canonical.com.http: Flags [S], seq 1013193892, win 64800, options [mss 1440,sackOK,TS val 2184529712 ecr 0,nop,wscale 7], length 0
+23:54:34.196371 IP6 gladys.canonical.com.http > kirthivasan.46050: Flags [S.], seq 653504001, ack 1013193893, win 65535, options [mss 1440], length 0
+23:54:34.198576 IP6 kirthivasan.46050 > gladys.canonical.com.http: Flags [.], ack 1, win 64800, length 0
+23:54:34.198844 IP6 kirthivasan.46050 > gladys.canonical.com.http: Flags [P.], seq 1:89, ack 1, win 64800, length 88: HTTP: GET / HTTP/1.1
+23:54:34.203899 IP6 gladys.canonical.com.http > kirthivasan.46050: Flags [.], ack 89, win 65535, length 0
+23:54:41.181172 IP6 gladys.canonical.com.http > kirthivasan.46050: Flags [P.], seq 1:190, ack 89, win 65535, length 189: HTTP: HTTP/1.1 204 No Content
+23:54:41.181236 IP6 kirthivasan.46050 > gladys.canonical.com.http: Flags [.], ack 190, win 64611, length 0
+23:54:41.183318 IP6 kirthivasan.46050 > gladys.canonical.com.http: Flags [F.], seq 89, ack 190, win 64611, length 0
+23:54:41.186779 IP6 gladys.canonical.com.http > kirthivasan.46050: Flags [.], ack 90, win 65535, length 0
+^C
+9 packets captured
+9 packets received by filter
+0 packets dropped by kernel
+
