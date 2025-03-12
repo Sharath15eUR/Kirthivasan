@@ -1,0 +1,26 @@
+kirthivasan@kirthivasan:~$ ping google.com
+PING google.com (142.250.183.238) 56(84) bytes of data.
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=1 ttl=255 time=53.4 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=2 ttl=255 time=60.0 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=3 ttl=255 time=45.9 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=4 ttl=255 time=42.5 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=5 ttl=255 time=46.9 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=6 ttl=255 time=75.5 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=7 ttl=255 time=68.8 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=8 ttl=255 time=70.4 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=9 ttl=255 time=38.0 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=10 ttl=255 time=55.0 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=11 ttl=255 time=56.0 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=12 ttl=255 time=56.1 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=13 ttl=255 time=49.2 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=14 ttl=255 time=40.3 ms
+64 bytes from maa05s23-in-f14.1e100.net (142.250.183.238): icmp_seq=15 ttl=255 time=56.8 ms
+^C
+--- google.com ping statistics ---
+15 packets transmitted, 15 received, 0% packet loss, time 14073ms
+rtt min/avg/max/mdev = 38.048/54.335/75.482/10.702 ms
+
+-------------------------------------------------------------------------------------------------------------------
+kirthivasan@kirthivasan:~$ arp -a
+_gateway (10.0.2.2) at 52:55:0a:00:02:02 [ether] on enp0s3
+? (10.0.2.3) at 52:55:0a:00:02:03 [ether] on enp0s3
