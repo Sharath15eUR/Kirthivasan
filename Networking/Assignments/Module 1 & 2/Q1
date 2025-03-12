@@ -1,0 +1,26 @@
+File transfer using SCP
+
+kirthivasan@kirthivasan:~$ scp -r /home/kirthivasan/Q5 t1@10.0.2.15:/home/t1/Q5
+t1@10.0.2.15's password: 
+f2                                                                                                   100%    0     0.0KB/s   00:00    
+f8                                                                                                   100%    0     0.0KB/s   00:00    
+f3                                                                                                   100%    0     0.0KB/s   00:00    
+f1                                                                                                   100%    0     0.0KB/s   00:00    
+s1                                                                                                   100%  228     8.9KB/s   00:00    
+t1@kirthivasan:~$ ls
+backup  Q5  snap
+t1@kirthivasan:~$ cd Q5
+t1@kirthivasan:~/Q5$ ls
+f1  f2  f3  f8  s1
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+File transfer using CP
+
+t1@kirthivasan:~$ ls
+backup  kv  Q5  snap
+t1@kirthivasan:~$ sudo cp -r /home/kirthivasan/Public /home/t1/Public
+t1@kirthivasan:~$ ls
+backup  kv  Public  Q5  snap
+t1@kirthivasan:~$ cd Public
+t1@kirthivasan:~/Public$ ls
+file  file3
