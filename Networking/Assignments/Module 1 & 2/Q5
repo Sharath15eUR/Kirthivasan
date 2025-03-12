@@ -1,0 +1,4 @@
+- When duplicate IP addresses are configured on a network the network communication fails because the network device can't distinguish between the two devices with the same IP, leading to one or both devices losing connectivity.
+- A network IP should be unique is  two devices have same the ip it will create severalconflicts like the devices will not be able communicate with the network properly and data loss will occurs.
+- One of the conflict is in ARP when we use ip to find mac where if ther is two  devices with same ip which leads to confusion and the faster device will communicate and slower one will not receive any data and also when two devices with same ip in ARP leads to get a Fault MAC address.
+- Which also lead to an attacker can intentionally use the same IP and can alter or steal the datas.
