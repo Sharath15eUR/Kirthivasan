@@ -1,0 +1,53 @@
+1.VNC 
+    VNC is an open-source remote desktop sharing system that works on Linux, Windows
+  - For initializing the vnc we need to install the paclkages 
+    kirthivasan@kirthivasan:~$ sudo apt install tightvncserver -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  tightvncpasswd
+Suggested packages:
+  tightvnc-java
+The following NEW packages will be installed:
+  tightvncpasswd tightvncserver
+0 upgraded, 2 newly installed, 0 to remove and 281 not upgraded.
+Need to get 708 kB of archives.
+After this operation, 1,817 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu noble/universe amd64 tightvncpasswd amd64 1:1.3.10-8 [15.5 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu noble/universe amd64 tightvncserver amd64 1:1.3.10-8 [693 kB]
+Fetched 708 kB in 3s (207 kB/s)         
+Selecting previously unselected package tightvncpasswd.
+(Reading database ... 192440 files and directories currently installed.)
+Preparing to unpack .../tightvncpasswd_1%3a1.3.10-8_amd64.deb ...
+Unpacking tightvncpasswd (1:1.3.10-8) ...
+Selecting previously unselected package tightvncserver.
+Preparing to unpack .../tightvncserver_1%3a1.3.10-8_amd64.deb ...
+Unpacking tightvncserver (1:1.3.10-8) ...
+Setting up tightvncpasswd (1:1.3.10-8) ...
+update-alternatives: using /usr/bin/tightvncpasswd to provide /usr/bin/vncpasswd (vncpasswd) in auto mode
+Setting up tightvncserver (1:1.3.10-8) ...
+update-alternatives: using /usr/bin/tightvncserver to provide /usr/bin/vncserver (vncserver) in auto mode
+update-alternatives: using /usr/bin/Xtightvnc to provide /usr/bin/Xvnc (Xvnc) in auto mode
+Processing triggers for man-db (2.12.0-4build2) ...
+
+ - To create a session 
+kirthivasan@kirthivasan:~$ vncserver
+
+Password: 
+Verify:   
+
+Warning: kirthivasan:1 is taken because of /tmp/.X1-lock
+Remove this file if there is no X server kirthivasan:1
+xauth:  file /home/kirthivasan/.Xauthority does not exist
+
+New 'X' desktop is kirthivasan:2
+
+Creating default startup script /home/kirthivasan/.vnc/xstartup
+Starting applications specified in /home/kirthivasan/.vnc/xstartup
+Log file is /home/kirthivasan/.vnc/kirthivasan:2.log
+
+2.Anydesk
+ AnyDesk is a remote desktop application that allows you to control and access another computer over the internet.
+ Each device will get a unique 9 digit id that is need to be used while connnecting to anydesk
+ After entering the id the connection will be established
