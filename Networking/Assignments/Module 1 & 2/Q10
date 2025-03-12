@@ -1,0 +1,4 @@
+- When a device connects to a network it will not have a ip so it will send a broadcast to  find a DHCP server.
+- The DHCP server responds with an available IP address.
+- The device accepts the offered IP and asks the server to confirm the assignment.
+- The server confirms the IP assignment, and the device can now use the network.
