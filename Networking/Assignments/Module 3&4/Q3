@@ -1,0 +1,56 @@
+Changing the ip 
+
+kirthivasan@kirthivasan:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::a00:27ff:feeb:b7b5  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:feeb:b7b5  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::3c50:9b2a:d75d:1fc7  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:eb:b7:b5  txqueuelen 1000  (Ethernet)
+        RX packets 31  bytes 6747 (6.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 124  bytes 17516 (17.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 37  bytes 4289 (4.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37  bytes 4289 (4.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+-------------------------------------------------------------------------------------------
+
+changing the mac
+
+kirthivasan@kirthivasan:~$ sudo ifconfig enp0s3 hw ether 08:00:27:a5:14:e6
+kirthivasan@kirthivasan:~$ sudo ifconfig enp0s3 up
+kirthivasan@kirthivasan:~$ sudo ifconfig enp0s3
+
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.20  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::a00:27ff:feeb:b7b5  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:feeb:b7b5  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::3c50:9b2a:d75d:1fc7  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:a5:14:e6  txqueuelen 1000  (Ethernet)
+        RX packets 31  bytes 6747 (6.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 157  bytes 22034 (22.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+kirthivasan@kirthivasan:~$ ping www.google.com
+PING www.google.com (142.250.207.68) 56(84) bytes of data.
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=1 ttl=255 time=34.4 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=2 ttl=255 time=42.7 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=3 ttl=255 time=44.6 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=4 ttl=255 time=50.2 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=5 ttl=255 time=40.0 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=6 ttl=255 time=35.3 ms
+64 bytes from hkg12s32-in-f4.1e100.net (142.250.207.68): icmp_seq=7 ttl=255 time=51.8 ms
+^C
+--- www.google.com ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6014ms
+rtt min/avg/max/mdev = 34.383/42.712/51.800/6.261 ms
