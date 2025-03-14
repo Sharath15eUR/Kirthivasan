@@ -1,0 +1,5 @@
+- Two pcs are connected to each other using a switch 
+- Ip of pc1 is 192.160.10.1 , Ip of pc2 is 192.160.10.2
+- I have pinged to pc2 from pc1 with wrong ip and the ping fails 
+- After ping fails i have used traceroute it also fails 
+- After i ping with the proper ip the connection made and in traceroute we can able to see the path of data transfer
