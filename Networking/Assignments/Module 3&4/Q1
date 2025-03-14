@@ -1,0 +1,4 @@
+I have used cisco packet tracer tool to complete the Q1 
+I have connected two pc to a switch pc1 with ip 192.160.10.1 and pc2 with 192.160.10.2 
+I have pinged pc2 from pc1
+From switch the mac address was found with command show mac address-table
