@@ -1,0 +1,4 @@
+- The Linux kernel manages Ethernet communication through device drivers, network interfaces, and networking subsystems.
+- Ethernet Drivers: Each Ethernet card (NIC) has a driver in the kernel that allows it to communicate with the system. These drivers handle sending and receiving data over the network.
+- Network Interfaces: The kernel creates a virtual representation of Ethernet hardware as network interfaces . These interfaces allow user programs to send and receive data.
+- Packet Processing: The kernel manages incoming and outgoing packets using networking protocols like TCP/IP. Tools like ip and ifconfig help configure and monitor network settings.
