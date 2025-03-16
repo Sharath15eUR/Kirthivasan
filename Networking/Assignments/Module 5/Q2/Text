@@ -1,0 +1,4 @@
+- I have created a Network with 2 pc and 1 switch connected to a rounter
+- I have pinged to router from pc1 and obtain the arp 
+- i have manually  changed the mac of attacker pc with mac of router 
+- After i pinged and used arp and i got same mac address for router and attacker pc
