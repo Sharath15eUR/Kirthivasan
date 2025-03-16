@@ -1,0 +1,4 @@
+- ARP play ptotocal is mainly used to identify the mac address of the destination machine.
+- Sorce machine will send a Broadcast ARP request  to all the connected devices with source ip and mac and also with destination ip.
+- The device which have the matched ip will reply to the source machine with unicast message with its mac address.
+- The Mac address is stored in the arp table of the source machine and whenever it needs to send a packet it take the mac addres from the table and send the packet to the destination without sending as a broadcast message.
