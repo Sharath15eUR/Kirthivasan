@@ -1,0 +1,4 @@
+Different vlan communication 
+    I have taken 4 pc and two switch and i  connected the switch using trunk port.
+    when i try to ping from vlan 10 of switch 1 to vlan 10 of switch 2 the ping is sucessfull but when i try to ping from vlan 10 to vlan 20 the ping becomes unsucessfull.
+    Because there is no vlan rouyting is created using router as vLANs cannot communicate by default because they are separate broadcast domains so we need a Layer 3 device like roter for communication between vlans.
