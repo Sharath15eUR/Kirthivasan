@@ -1,0 +1,2 @@
+I have used Test-Connection command in the cmd to test the connection of multile destinations at the same time.
+The nslookup is used to perform the operations related to the DNS records.
