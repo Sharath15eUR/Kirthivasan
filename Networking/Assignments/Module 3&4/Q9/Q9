@@ -1,0 +1,27 @@
+kirthivasan@kirthivasan:~$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:eb:b7:b5 brd ff:ff:ff:ff:ff:ff
+kirthivasan@kirthivasan:~$ sudo ip addr add 192.168.1.100/24 dev enp0s3
+[sudo] password for kirthivasan: 
+kirthivasan@kirthivasan:~$ sudo ip link set enp0s3 up
+kirthivasan@kirthivasan:~$ sudo ip route add default via 192.168.1.1
+kirthivasan@kirthivasan:~$ ip a show enp0s3
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:eb:b7:b5 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.55.134/24 brd 192.168.55.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 2862sec preferred_lft 2862sec
+    inet 192.168.1.100/24 scope global enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 2402:3a80:58:1868:fe8:c117:dcfb:af62/64 scope global temporary dynamic 
+       valid_lft 3239sec preferred_lft 3239sec
+    inet6 2402:3a80:58:1868:a00:27ff:feeb:b7b5/64 scope global dynamic mngtmpaddr 
+       valid_lft 3239sec preferred_lft 3239sec
+    inet6 fe80::a00:27ff:feeb:b7b5/64 scope link 
+       valid_lft forever preferred_lft forever
+kirthivasan@kirthivasan:~$ ip r
+default via 192.168.1.1 dev enp0s3 
+default via 192.168.55.53 dev enp0s3 proto dhcp src 192.168.55.134 metric 100 
+192.168.1.0/24 dev enp0s3 proto kernel scope link src 192.168.1.100 
+192.168.55.0/24 dev enp0s3 proto kernel scope link src 192.168.55.134 metric 100
