@@ -1,0 +1,5 @@
+VLAN 
+  It is use to split the lan network into small small parts to reduce flooding and to protect the data .
+  If we are trying to connect two different vlan we need a common native vlan to carry the untagged traffic in the trunk port
+  When we have two  differnt native valn for the netweok device then the traffic will not be send due to vlan mismatch
+  To avoid this we need to configure the switches with same native vlan then we can able send the traffic to the other vlan
