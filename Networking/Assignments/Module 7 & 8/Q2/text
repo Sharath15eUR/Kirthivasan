@@ -1,0 +1,18 @@
+DNS 
+  This has 5 headers inlcudes 
+     1 Transcation id - same for both query and response
+     2 Flag - query (0x0100) , response (0x8108)
+     3 Question and Answer 
+     4 TTl - response time
+
+TCP ( connection oriented  transmission )
+   This has several informations like 
+     1 Souce port and destination port number
+     2 Sequence and  acknowledge number
+     3 Flag 
+     4 Window size
+
+UDP ( connection less transmission )
+    This has onle the sourece , destination port number
+
+  
