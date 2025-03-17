@@ -1,0 +1,6 @@
+Management Vlan
+  The main function is to isolate the management network traffic from regular traffic .
+  It ensures the data security and creates a dedicated network for the  administrators.
+
+Assigning IP to management Vlan
+  It mainly helps the administrators to access the systems in a remote manner using telnet or ssh for this we need to assign a ip to the  switch.
