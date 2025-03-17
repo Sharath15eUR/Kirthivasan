@@ -1,0 +1,15 @@
+kirthivasan@kirthivasan:~$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:eb:b7:b5 brd ff:ff:ff:ff:ff:ff
+kirthivasan@kirthivasan:~$ sudo ip -s link show enp0s3
+[sudo] password for kirthivasan: 
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:eb:b7:b5 brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+         13733      83      0       0       0      34 
+    TX:  bytes packets errors dropped carrier collsns           
+         24778     205      0       0       0       0 
+kirthivasan@kirthivasan:~$ arp -a
+_gateway (192.168.55.53) at 66:cf:80:22:5c:96 [ether] on enp0s3
