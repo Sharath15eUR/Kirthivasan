@@ -1,0 +1,7 @@
+9. What happens if wireless client is connected to Lightweight AP in local mode and WLC goes down?
+
+   - If the AP is in local mode, it cannot forward user traffic without the WLC.
+
+   - The AP may reboot or switch to “disconnected” state, and the client loses connectivity.
+
+   - Use FlexConnect mode to allow local switching when WLC is unavailable.
