@@ -1,0 +1,12 @@
+4. What is the significance of OFDM in WLAN? How does it improve performance?
+
+   OFDM (Orthogonal Frequency Division Multiplexing) splits signals into multiple subcarriers.
+
+   Benefits:
+
+           - Higher throughput
+
+           - Resilient to multipath fading
+
+           - Efficient spectrum usage
+
