@@ -1,0 +1,14 @@
+2. Describe CAPWAP, explain the flow between AP and Controller
+
+   CAPWAP (Control And Provisioning of Wireless Access Points) is a protocol used to manage and control APs via a central WLC.
+
+   It establishes two tunnels: a Control tunnel for management and a Data tunnel user traffic.
+
+   Flow:
+
+      AP boots → discovers WLC via DHCP, DNS, or broadcast
+
+      CAPWAP control tunnel is established → AP is provisioned
+
+      CAPWAP data tunnel carries client traffic to WLC
+
