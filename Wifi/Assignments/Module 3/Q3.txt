@@ -1,0 +1,17 @@
+3. How do modulation schemes work in the PHY layer? Compare different modulation schemes and their performance.
+
+      Modulation encodes digital data onto a carrier wave.
+
+        Common types:
+
+          - BPSK (1 bit/symbol)
+
+          - QPSK (2 bits/symbol)
+
+          - 16-QAM (4 bits/symbol)
+
+          - 64-QAM (6 bits/symbol)
+
+          - 256-QAM (8 bits/symbol)
+
+        Higher modulation = higher data rate but more sensitive to noise.
