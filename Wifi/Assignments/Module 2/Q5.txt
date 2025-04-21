@@ -1,0 +1,8 @@
+5. How is the CAPWAP tunnel maintained between AP and controller?
+
+   The tunnel is maintained using UDP port 5246 (control) and UDP port 5247 (data).
+
+   Keepalive messages and heartbeat signals ensure connectivity.
+
+   If the WLC goes down or the tunnel drops, the AP can switch to standalone or failover mode if supported.
+
