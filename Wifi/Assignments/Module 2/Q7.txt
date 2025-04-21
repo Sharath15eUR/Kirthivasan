@@ -1,0 +1,8 @@
+7. If WLC deployed in WAN, which AP mode is best for local network and how?
+
+   FlexConnect mode  is ideal. In this mode, the AP can switch locally and continue to forward traffic even when the WLC is unreachable.
+   
+   Useful in branch offices or remote locations with WAN-based WLC.
+
+
+    
