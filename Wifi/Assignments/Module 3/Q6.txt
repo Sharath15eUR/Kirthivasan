@@ -1,0 +1,6 @@
+6. What is the role of Guard Intervals in WLAN transmission? How does a short Guard Interval improve efficiency?
+
+  - Guard Interval separates OFDM symbols to avoid inter-symbol interference.
+
+  - Shorter intervals (400ns vs 800ns) improve efficiency and increase data rates by reducing wait time between transmissions.
+
