@@ -1,0 +1,6 @@
+2. What are DSSS and FHSS? How do they work?
+
+    DSSS (Direct Sequence Spread Spectrum): Spreads signal using a pseudo-random noise code; improves resistance to interference.
+
+    FHSS (Frequency Hopping Spread Spectrum): Signal rapidly hops across frequencies in a predefined pattern to avoid interference.
+
