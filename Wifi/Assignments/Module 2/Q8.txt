@@ -1,0 +1,9 @@
+8. What are challenges if deploying autonomous APs (more than 50) in large networks like university?
+
+    - Scalability issues: Each AP must be configured manually
+
+    - No central management: Difficult firmware updates, troubleshooting
+
+    - Inconsistent configurations: Risk of security misconfigurations
+
+    - Mobility limitations: Poor roaming and handoff between APs
