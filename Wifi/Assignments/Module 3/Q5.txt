@@ -1,0 +1,8 @@
+5. How are frequency bands divided for Wi-Fi? Explain different bands and their channels.
+
+      - 2.4 GHz Band: 14 channels (only 3 non-overlapping)
+
+      - 5 GHz Band: Over 20 non-overlapping channels, less interference
+
+      - 6 GHz Band (Wi-Fi 6E): More bandwidth, low latency, ideal for high-speed apps
+
