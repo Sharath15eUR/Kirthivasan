@@ -1,0 +1,31 @@
+What is PPDU?
+
+   PPDU (Physical Protocol Data Unit) is the transmission unit in the PHY layer.
+   It carries control and data information.
+   Types:
+     Data PPDU – Carries user data.
+     Control PPDU – Used for control signals.
+     Management PPDU – Used for management frames.
+
+PPDU Frame Format Across Wi-Fi Generations
+
+    Wi-Fi 4 (802.11n)
+        Modulation: OFDM (Orthogonal Frequency Division Multiplexing)
+        PPDU Structure:
+            - Preamble
+            - PLCP Header (Physical Layer Convergence Protocol – includes data rate, frame length)
+            - MAC Header (contains addressing and control information)
+            - Data (Payload)
+            - Tail (Padding for alignment)
+
+
+    Wi-Fi 5 (802.11ac)
+         Modulation: OFDM, supports up to 256-QAM
+         PPDU Structure:
+            - Short Preamble
+            - PLCP Header
+            - MAC Header
+            - Data
+            - Tail
+
+  
