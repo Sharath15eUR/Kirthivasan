@@ -1,0 +1,9 @@
+3. Where does CAPWAP fit in the OSI model? What are the two tunnels and their purpose?
+
+   CAPWAP operates at Layer 2 (Data Link) and Layer 3 (Network) of the OSI model.
+
+   Tunnels:
+
+        Control Tunnel: Used for AP configuration, management, and updates
+
+        Data Tunnel: Used for carrying actual user/client data packets between AP and WLC
