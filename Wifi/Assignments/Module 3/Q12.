@@ -1,0 +1,9 @@
+12. How is the data rate calculated?
+
+   Data Rate = (Number of bits per symbol × Symbol rate) × Coding rate × Number of streams
+   Factors:
+     - Modulation type (QAM level)
+     - Channel bandwidth (20/40/80/160 MHz)
+     - Number of spatial streams
+     - Guard interval
+     - Coding rate (e.g., 3/4, 5/6)
