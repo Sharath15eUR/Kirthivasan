@@ -1,0 +1,7 @@
+1. Brief about SplitMAC architecture and how it improves the AP’s performance
+
+     SplitMAC divides the MAC layer functions between the Access Point (AP) and the Wireless LAN Controller (WLC).
+
+      - Real-time functions like client association, beacon generation, encryption/decryption are handled by the AP.
+
+      - Non-real-time functions like association, authentication, mobility management are managed by the WLC.
