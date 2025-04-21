@@ -1,0 +1,5 @@
+9. What is the difference between MIMO and MU-MIMO?
+
+   - MIMO (Multiple Input Multiple Output): Increases data rate using multiple antennas for one user.
+
+   - MU-MIMO (Multi-User MIMO): AP sends data to multiple clients simultaneously, improving efficiency in crowded networks.
